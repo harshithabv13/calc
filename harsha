@@ -1,0 +1,20 @@
+def calc(operator,x,y):
+  if operator == "+":
+    return x + y
+  elif operator == "-":
+    return x - y
+  elif operator == "*":
+    return x * y
+  elif operator == "/":
+    return x / y
+  else:
+    return " invalid operator"
+
+while True:
+  print("welcome to the calculator")
+  a = int(input("enter the first number:"))
+  b = int(input("enter the second number:"))
+  operator = input("enter the operator:")
+  output = calc(operator,a,b)
+  print(output)
+  
